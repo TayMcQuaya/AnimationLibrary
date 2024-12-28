@@ -22,19 +22,24 @@ const animationListDiv = document.getElementById("animation-list");
 animationList.forEach((animation) => {
     const button = document.createElement("button");
     button.textContent = animation.name;
+    button.setAttribute('aria-label', `Apply ${animation.name} animation`);
 
-    button.addEventListener("click", () => applyAnimation(animation.class, animation.code));
+    button.addEventListener("click", (event) => applyAnimation(animation.class, animation.code, event));
 
     animationListDiv.appendChild(button);
 });
 
 // Apply animation to the preview box
-function applyAnimation(animationClass, animationCode) {
+function applyAnimation(animationClass, animationCode, event) {
     const previewBox = document.querySelector(".preview-box");
+    const buttons = document.querySelectorAll("#animation-list button");
 
     // Remove existing animation classes except custom ones
     previewBox.className = "preview-box";
-    
+
+    // Remove active class from all buttons
+    buttons.forEach(button => button.classList.remove('active'));
+
     // Add the selected animation class
     previewBox.classList.add(animationClass);
 
@@ -42,6 +47,9 @@ function applyAnimation(animationClass, animationCode) {
     if (animationClass.startsWith("animate__")) {
         previewBox.classList.add("animate__animated");
     }
+
+    // Add active class to the clicked button
+    event.currentTarget.classList.add('active');
 
     // Update the description text for clarity
     const explanation = document.getElementById("animation-description");
