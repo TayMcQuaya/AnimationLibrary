@@ -1,4 +1,3 @@
-```markdown
 # Animation Library
 
 ![Animation Library Banner](animationlibrary.png)
