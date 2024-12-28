@@ -2,21 +2,22 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f3ec78, #af4261);
-    color: #2c2c2c;
+    background: linear-gradient(135deg, #f3ec78, #af4261); /* Sunset Yellow to Soft Coral */
+    color: #2c2c2c; /* Dark Gray for primary text */
     height: 100vh; /* Prevent scrolling */
     overflow: hidden; /* Disable scrolling */
     display: flex;
     flex-direction: column;
 }
 
+/* Header */
 header {
     padding: 1rem;
-    background: linear-gradient(135deg, #FF6B6B, #FF9A76, #4ECDC4); /* Soft Coral to Sunset Orange to Ocean Blue */
+    background: linear-gradient(135deg, #FF6B6B, #FF9A76, #C06C84); /* Soft Coral to Sunset Orange to Lavender Purple */
     color: white;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #fad0c4;
+    border-bottom: 2px solid #fad0c4; /* Peach Pink */
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -71,7 +72,7 @@ button {
     padding: 1rem;
     border: none;
     cursor: pointer;
-    background-color: #ff6b6b;
+    background-color: #ff6b6b; /* Soft Coral */
     color: white;
     border-radius: 8px;
     font-weight: bold;
@@ -106,7 +107,7 @@ button.active {
 #animation-explanation {
     width: 100%;
     max-width: 400px;
-    background: linear-gradient(135deg, #ff6b6b, #fad0c4);
+    background: linear-gradient(135deg, #ff6b6b, #fad0c4); /* Soft Coral to Peach Pink */
     color: white;
     padding: 1rem;
     border-radius: 12px;
@@ -127,7 +128,7 @@ button.active {
 }
 
 #animation-explanation pre {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1); /* Neutral background for code blocks */
     padding: 0.6rem;
     border-radius: 8px;
     overflow-x: auto;
@@ -142,7 +143,7 @@ button.active {
 
 #animation-explanation code {
     font-family: 'Courier New', Courier, monospace;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.05); /* Semi-transparent background */
     padding: 0.3rem 0.5rem;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -160,6 +161,7 @@ button.active {
     font-size: 0.9rem;
     line-height: 1.3;
     font-weight: bold;
+    color: white;
 }
 
 /* Preview Container */
@@ -179,7 +181,7 @@ button.active {
     width: 280px;
     height: 280px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Sunset Orange to Peach Pink */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,13 +196,13 @@ button.active {
 /* Footer */
 footer {
     padding: 1rem;
-    background: linear-gradient(135deg, #FF6B6B, #FF9A76, #4ECDC4); /* Soft Coral to Sunset Orange to Ocean Blue */
+    background: linear-gradient(135deg, #FF6B6B, #FF9A76, #C06C84); /* Soft Coral to Sunset Orange to Lavender Purple */
     color: white;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: auto;
     text-align: center;
-    border-top: 2px solid #fad0c4;
+    border-top: 2px solid #fad0c4; /* Peach Pink */
 }
 
 footer p {
