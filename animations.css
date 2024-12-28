@@ -3,44 +3,224 @@
 /* Rotate 3D Animation */
 @keyframes rotate3D {
     0% {
-      transform: rotate3d(1, 1, 0, 0deg);
+        transform: rotate3d(1, 1, 0, 0deg);
     }
     100% {
-      transform: rotate3d(1, 1, 0, 360deg);
+        transform: rotate3d(1, 1, 0, 360deg);
     }
-  }
-  .rotate3D {
+}
+.rotate3D {
     animation: rotate3D 2s infinite;
-  }
-  
-  /* Morphing Circle Animation */
-  @keyframes morphCircle {
+}
+
+/* Morphing Circle Animation */
+@keyframes morphCircle {
     0% {
-      border-radius: 50%;
+        border-radius: 50%;
     }
     50% {
-      border-radius: 20%;
+        border-radius: 20%;
     }
     100% {
-      border-radius: 50%;
+        border-radius: 50%;
     }
-  }
-  .morphCircle {
+}
+.morphCircle {
     animation: morphCircle 2s infinite;
-  }
-  
-  /* Fade and Scale Animation */
-  @keyframes fadeAndScale {
+}
+
+/* Fade and Scale Animation */
+@keyframes fadeAndScale {
     0% {
-      opacity: 0;
-      transform: scale(0.5);
+        opacity: 0;
+        transform: scale(0.5);
     }
     100% {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
-  }
-  .fadeAndScale {
+}
+.fadeAndScale {
     animation: fadeAndScale 1.5s ease-in-out infinite;
-  }
-  
+}
+
+/* Swing Animation */
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.swing {
+    animation: swing 2s ease-in-out infinite;
+}
+
+/* Flip Card Animation */
+@keyframes flipCard {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(400px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
+.flipCard {
+    animation: flipCard 3s ease-in-out infinite;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+/* Bounce In and Out */
+@keyframes bounceInOut {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.bounceInOut {
+    animation: bounceInOut 1.5s ease-in-out infinite;
+}
+
+/* Glow Effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+.glow {
+    animation: glow 2s infinite;
+    border: 2px solid white;
+}
+
+/* Slide and Fade */
+@keyframes slideFadeIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slideFadeIn {
+    animation: slideFadeIn 1s ease-out;
+}
+
+/* Heartbeat Effect */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+.heartbeat {
+    animation: heartbeat 1s ease-in-out infinite;
+}
+
+/* Spiral Rotate */
+@keyframes spiralRotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+.spiralRotate {
+    animation: spiralRotate 3s linear infinite;
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.shake {
+    animation: shake 1s ease-in-out infinite;
+}
+
+/* Ripple Effect */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+.ripple {
+    animation: ripple 1.5s ease-out infinite;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Zoom Bounce */
+@keyframes zoomBounce {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.zoomBounce {
+    animation: zoomBounce 2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
