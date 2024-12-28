@@ -28,7 +28,7 @@ Welcome to the **Animation Library**! This project is a web-based platform that 
 
 ## Demo
 
-[Live Demo Link](https://your-live-demo-link.com)
+[Live Demo Link](https://taymcquaya.github.io/AnimationLibrary/)
 
 *Note: Replace the above link with the actual URL of your deployed project.*
 
