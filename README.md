@@ -26,6 +26,11 @@ Welcome to the **Animation Library**! This project is a web-based platform that 
 - **Customizable Themes:** Easily modify the color palette and fonts to match your personal or brand aesthetics.
 - **Smooth Animations:** Implemented with smooth transitions and consistent animation speeds for a polished look.
 
+## Demo
+
+[Live Demo Link](https://taymcquaya.github.io/AnimationLibrary/)
+
+*Note: Replace the above link with the actual URL of your deployed project.*
 
 ## Technologies Used
 
