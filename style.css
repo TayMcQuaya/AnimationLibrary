@@ -1,0 +1,188 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    color: #2c2c2c;
+    height: 100vh; /* Prevent scrolling */
+    overflow: hidden; /* Disable scrolling */
+    display: flex;
+    flex-direction: column;
+}
+  
+header {
+    padding: 1rem; /* Reduced padding */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #fad0c4;
+    font-family: 'Permanent Marker', cursive;
+}
+  
+header h1 {
+    font-size: 2.5rem; /* Reduced header font size */
+    margin: 0;
+    margin-right: 4rem;
+}
+  
+header p {
+    font-size: 1.2rem; /* Reduced subheading font size */
+    margin-right: 4rem;
+}
+  
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 0.5rem; /* Reduced padding */
+    gap: 1.5rem;
+    flex: 1;
+    max-width: 100vw; /* Ensures no yellow stripe */
+    overflow: hidden; /* Prevents overflow causing the stripe */
+}
+  
+/* Animation List */
+#animation-list-container {
+    width: 18%; /* Adjusted width */
+    max-width: 250px; /* Adjusted max-width */
+    text-align: center;
+    position: relative;
+    left: 130px; /* Slightly moved to the right */
+    top: -20px; /* Moves the animation list upwards */
+}
+  
+#animation-list-container h2 {
+    font-size: 1.5rem; /* Adjusted font size */
+    margin-bottom: 0.8rem;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+}
+  
+#animation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjusted min-width for buttons */
+    gap: 0.8rem; /* Adjusted gap */
+}
+  
+/* Enlarged button text */
+button {
+    padding: 0.8rem 1.2rem; /* Adjusted padding */
+    border: none;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold; /* Made text bold */
+    font-size: 1rem; /* Increased font size for buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+  
+button:hover {
+    transform: scale(1.05); /* Adjusted hover scale effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+  
+#animation-explanation {
+    width: 18%; /* Adjusted width for better fit */
+    background: linear-gradient(135deg, #ff6b6b, #fad0c4); /* Matching button background */
+    color: white; /* White text for readability */
+    padding: 0.8rem; /* Adjusted padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    position: relative;
+    max-height: none; /* Allow height to adjust dynamically */
+    height: auto; /* Adjust the height automatically based on content */
+    margin-top: 20px; /* Moves the entire box slightly upward */
+    left: -130px; /* Slightly moved to the left */
+}
+  
+#animation-explanation h3 {
+    text-align: center; /* Center the "How to Use:" text */
+    margin-bottom: 0.8rem; /* Space below the title */
+    font-size: 1.2rem; /* Adjusted font size */
+    font-weight: bold; /* Bold for emphasis */
+}
+  
+#animation-explanation pre {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.4rem; /* Adjusted padding inside pre */
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.8rem; /* Adjusted font size */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0.3rem 0; /* Adjusted margin between code blocks */
+    color: white;
+    white-space: pre-line; /* Allows for line breaks within <pre> */
+    word-wrap: break-word;
+    font-weight: bold; /* Bold text */
+}
+  
+#animation-explanation code {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.8rem; /* Adjusted font size */
+    color: white;
+    font-weight: bold;
+}
+  
+#animation-explanation li {
+    margin-bottom: 0.6rem; /* Spacing between list items */
+    font-size: 0.85rem; /* Adjusted font size */
+}
+  
+#animation-explanation .extra-info {
+    margin-top: 0.6rem; /* Space above the additional information */
+    font-size: 0.85rem; /* Adjust font size for readability */
+    line-height: 1.3;
+    font-weight: bold;
+}
+  
+/* Enlarged preview box and text */
+#preview-container {
+    flex: 0 0 300px; /* Increased width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+.preview-box {
+    position: relative;
+    width: 280px; /* Increased width for preview box */
+    height: 280px; /* Increased height for preview box */
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Increased font size for preview text */
+    font-weight: bold;
+    color: white; /* Preview text is now white */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+/* Footer */
+footer {
+    padding: 1rem;
+    background: linear-gradient(135deg, #434343, #000000);
+    color: white;
+    font-size: 0.85rem; /* Adjusted font size */
+    font-weight: bold; /* Bold footer text */
+    margin-top: auto;
+    text-align: center; /* Centered footer */
+    border-top: 2px solid #fad0c4;
+}
+
+footer p {
+    margin-right: 4rem;
+}

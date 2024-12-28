@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animation Library</title>
+  <!-- Link CSS files -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animate.min.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Permanent+Marker&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>✨ Animation Library ✨</h1>
+    <p>Discover and preview amazing animations!</p>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <div id="main-container">
+      <!-- Animation List -->
+      <div id="animation-list-container">
+        <h2>Choose an Animation:</h2>
+        <div id="animation-list"></div>
+      </div>
+
+      <!-- Animation Preview -->
+      <div id="preview-container">
+        <div class="preview-box">
+          <span>Preview</span>
+        </div>
+      </div>
+
+      <!-- Animation Explanation -->
+      <div id="animation-explanation">
+        <h3>How to Use:</h3>
+        <ol>
+          <li>
+            <strong>Download the required files:</strong>
+            <ul>
+              <li>
+                <a href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" target="_blank">
+                  animate.min.css
+                </a>
+              </li>
+              <li>
+                <a href="animations.css" download>animations.css</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Include the files in your HTML:</strong>
+            <pre><code>&lt;link rel="stylesheet" href="path-to/animate.min.css"&gt;
+&lt;link rel="stylesheet" href="path-to/animations.css"&gt;</code></pre>
+          </li>
+          <li>
+            <strong>Apply animation classes:</strong>
+            Use the animation class in your HTML elements like so:
+            <pre><code>&lt;div class="animate__zoomIn"&gt;Your Content&lt;/div&gt;
+&lt;div class="rotate3D"&gt;Your Content&lt;/div&gt;</code></pre>
+          </li>
+        </ol>
+        <p class="extra-info">
+          Make sure to use the correct class name and include both files for default and custom animations.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Built with ❤️ using Animate.css and Custom Animations.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
