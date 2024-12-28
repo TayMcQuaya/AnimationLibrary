@@ -211,9 +211,42 @@ footer {
     border-top: 2px solid #fad0c4; /* Peach Pink */
 }
 
-footer p {
+
+footer a img {
+    filter: invert(100%); /* Makes logos white to match dark background */
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  footer a img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    filter: invert(70%) sepia(50%) saturate(200%) hue-rotate(190deg); /* Add a hover color tint */
+  }
+
+  footer a {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  footer a:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    color: #fad0c4; /* Peach Pink hover color */
+  }
+  
+  footer i {
+    font-size: 28px; /* Increased icon size */
+    filter: brightness(85%); /* Adjust brightness for theme matching */
+  }
+  
+  footer i:hover {
+    filter: brightness(100%);
+  }
+  
+  footer p {
     margin: 0;
-}
+    text-align: center; /* Ensure the footer text is centered */
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
