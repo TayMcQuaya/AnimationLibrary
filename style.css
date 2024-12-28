@@ -12,7 +12,7 @@ body {
 
 header {
     padding: 1rem;
-    background: linear-gradient(135deg, #434343, #000000);
+    background: linear-gradient(135deg, #FF6B6B, #FF9A76, #4ECDC4); /* Soft Coral to Sunset Orange to Ocean Blue */
     color: white;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -86,7 +86,13 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #FF4757; /* Slightly darker coral on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.5); /* Soft Coral highlight */
 }
 
 /* Active Button Indicator */
@@ -188,7 +194,7 @@ button.active {
 /* Footer */
 footer {
     padding: 1rem;
-    background: linear-gradient(135deg, #434343, #000000);
+    background: linear-gradient(135deg, #FF6B6B, #FF9A76, #4ECDC4); /* Soft Coral to Sunset Orange to Ocean Blue */
     color: white;
     font-size: 0.85rem;
     font-weight: bold;
