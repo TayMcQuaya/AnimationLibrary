@@ -81,7 +81,7 @@
 .flipCard {
     animation: flipCard 3s ease-in-out infinite;
     transform-origin: center;
-    backface-visibility: hidden;
+    backface-visibility: visible;
 }
 
 /* Bounce In and Out */
